@@ -3,11 +3,11 @@
 A quick setup to demo NiFi Stateless with a flow using Record processors pulling data from a Kafka topic and sending it to a table in PostgreSQL.
 
 This is using:
-- Apache NiFi 1.12.1
-- Apache NiFi Stateless 1.12.1
-- Apache NiFi Registry 0.7.0
+- Apache NiFi 1.13.2
+- Apache NiFi Stateless 1.13.2
+- Apache NiFi Registry 0.8.0
 - PostgreSQL 12
-- And the Kafka 2.6.0 / Zookeeper 3.4.13 docker-compose work from [wurstmeister/kafka-docker](https://github.com/wurstmeister/kafka-docker)
+- And the Kafka 2.7.0 / Zookeeper 3.4.13 docker-compose work from [wurstmeister/kafka-docker](https://github.com/wurstmeister/kafka-docker)
 
 We're deploying a NiFi instance used to design the flow to run in a Stateless mode, and to version it into the Registry. The NiFi instance is also used to generate data into the Kafka topic backed by a single broker. We're also running a PostgreSQL instance where the data will be ingested.
 
